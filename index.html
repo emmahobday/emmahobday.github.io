@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css">
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat|Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <script src="https://kit.fontawesome.com/c6e5b86403.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c6e5b86403.js" crossorigin="anonymous"></script>
   <title>Emma Hobday</title>
 </head>
 
@@ -35,37 +36,71 @@
 
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h1 class="title">Emma Hobday</h1>
-        <h2 class="subtitle">Junior Software Developer</h2>
+        <h1 class="title">EMMA HOBDAY</h1>
+        <h2 class="subtitle">Software Developer</h2>
       </div>
     </div>
   </section>
 
   <main>
 
-    <div class="columns pageheight">
-      <div class="column">
+    <div class="columns pageheight aboutContainer">
+      <div class="column is-two-thirds">
         <section class="section">
           <div class="container">
             <h1 class="title secheading" id="about">About</h1>
-            <p>I'm an enthusiastic Junior Developer with a background in teaching and management. More to come soon!</p>
+            <p>I’ve been teaching at one of the largest primary schools in the country for the last seven years, and one
+              of the key teaching points in my classroom was always ‘growth mindset’ - the theory that you can cultivate
+              your ability through hard work. I loved motivating and guiding children to achieve more than they thought
+              they were capable of, and when I started to crave a new professional challenge, I decided to take the same
+              attitude towards myself.</p>
+            <!-- <p>I’d always loved teaching coding in my classroom, and I took on the role of Computing Leader to share my enthusiasm with the rest of the school. At the time, I never imagined I could take this interest beyond the level expected of eleven-year-olds, but when I started craving a new professional challenge and dipped my toe into the world of programming, I began to see coding, and myself, in a new light.</p> -->
+            <p>Through the GA Software Engineering Immersive course, I've developed a solid foundation of web
+              development skills and confidence in my ability to master new skills. </p>
+            <p>I’ve loved working with JavaScript and ReactJS, particularly writing logic. I also really enjoyed
+              designing backend models in Django to serve data in the most useful way and found creating a full-stack
+              application in my final project immensely satisfying. </p>
+
           </div>
         </section>
       </div>
-      <div class="column">
+      <div class="column is-one-third">
         <section class="section">
           <div class="container">
-            <h1 class="title secheading">Skills</h1>
-            <div class=icons>
-              <i class="devicon-html5-plain-wordmark"></i>
-              <i class="devicon-css3-plain"></i>
-              <i class="devicon-javascript-plain"></i>
-              <i class="devicon-github-plain"></i>
-            </div>
+            <img src="/images/Emma-1968-73.jpg" alt="Photo of me" class="photo" />
           </div>
         </section>
       </div>
     </div>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title secheading">Skills</h1>
+        <div class=icons>
+          <i class="devicon-html5-plain-wordmark icon"></i>
+          <i class="devicon-css3-plain icon"></i>
+          <i class="devicon-javascript-plain icon"></i>
+          <i class="devicon-github-plain icon"></i>
+          <i class="devicon-babel-plain icon"></i>
+          <i class="devicon-chrome-plain icon"></i>
+          <i class="devicon-django-plain icon"></i>
+          <i class="devicon-express-original icon"></i>
+          <i class="devicon-git-plain icon"></i>
+          <i class="devicon-heroku-original icon"></i>
+          <i class="devicon-mongodb-plain icon"></i>
+          <i class="devicon-mocha-plain icon"></i>
+          <i class="devicon-mysql-plain icon"></i>
+          <i class="devicon-nodejs-plain icon"></i>
+          <i class="devicon-postgresql-plain icon"></i>
+          <i class="devicon-python-plain icon"></i>
+          <i class="devicon-react-original icon"></i>
+          <i class="devicon-sass-original icon"></i>
+          <i class="devicon-trello-plain icon"></i>
+          <i class="devicon-webpack-plain icon"></i>
+
+        </div>
+      </div>
+    </section>
 
     <section class="section">
       <div class="container">
@@ -97,12 +132,12 @@
               <div class="eduitem">
                 <p class="courseheading">PGCE Primary Education</p>
                 <p class="coursedate">2011-2012</p>
-                <p>Institute of Education, University of London</p>
+                <p class="courseinstitution">Institute of Education, University of London</p>
               </div>
               <div class="eduitem">
                 <p class="courseheading">BA Philosophy (Hons)</p>
                 <p class="coursedate">2004-2007</p>
-                <p>University of Warwick</p>
+                <p class="courseinstitution">University of Warwick</p>
               </div>
             </div>
           </div>
@@ -114,9 +149,34 @@
     <section class="section">
       <div class="container">
         <h1 class="title secheading" id="projects">Projects</h1>
-        <h2 class="subtitle">
+        <!-- <h2 class="subtitle">
           Coming soon!
-        </h2>
+        </h2> -->
+        <div class="project-container">
+          <div class="individual-project">
+            <h3 class="small-heading">Project 1: <span class="project-name">Jurassic Pac-Man</span></h3>
+            <img src="/images/screenshots/1.png" alt="Project 1" class="project-image">
+            <p class="project-text">A week-long solo project to create a grid-based game to be rendered in the browser, using 'vanilla' JavaScript, HTML and CSS. I created a Jurassic Park themed version of the arcade classic Pac-Man that allows the user to control a Jeff Goldblum avatar, losing lives when caught by pursuing dinosaurs who move intelligently around the maze, and achieving a final score if they win.</p>
+          </div>
+          <div class="individual-project">
+            <h3 class="small-heading">Project 2: <span class="project-name">Weather API</span></h3>
+            <img src="/images/screenshots/2.png" alt="Project 2" class="project-image">
+            <p class="project-text">A two-day hackathon paired project to create a React app that consumes a public API and has several components, both functional and classical. DarkSky API was our data source, and Bulma was used as a framework for our styling. We used moment.js to create a clock that ticks in local time on each city page.</p>
+          </div>
+        </div>
+        <div class="project-container">
+          <div class="individual-project">
+            <h3 class="small-heading">Project 3: <span class="project-name">Food for Thought</span></h3>
+            <img src="/images/screenshots/3.png" alt="Project 3" class="project-image">
+            <p class="project-text">A week-long project, working in a team of 4, to build a full-stack application. We used Express to create our API and serve our data from a Mongo database; this API was consumed with a React front-end. We used Git and Github to work collaboratively, developing features on our own branches before merging to a master branch. I built both front-end features, including a search and filter function for finding a restaurant that work in tandem, and back-end features, including a ‘change password’ function. </p>
+          </div>
+          <div class="individual-project">
+            <h3 class="small-heading">Project 4: <a href="http://recipedia84.herokuapp.com" rel='noopener noreferrer' target='_blank' class="project-name">Recipedia</span></h3>
+            <img src="/images/screenshots/4.png" alt="Project 4" class="project-image">
+            <p class="project-text">A week-long paired project to build a full-stack application by making our own back-end and front-end. We created a PostgreSQL database with selected data taken from Edamam public API, served this data using Django REST Framework, and we built our front-end using React. I found it particularly satisfying designing backend models in Django to serve data in the most useful way. I built both back-end and front-end advanced search features, using Django filter queries using Python on the back-end, and developed my skills with React hooks on the front-end.</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -127,7 +187,7 @@
         <ul>
           <li><i class="far fa-envelope"></i> <a href="mailto:emma.hobday@gmail.com">emma.hobday@gmail.com</a></li>
           <li><i class="fab fa-linkedin"></i> <a
-              href="https://www.linkedin.com/in/emmahobday1">www.linkedin.com/in/emma-hobday</a></li>
+              href="https://www.linkedin.com/in/emmahobday1">www.linkedin.com/in/emmahobday1</a></li>
           <li><i class="fab fa-github-square"></i> <a
               href="https://github.com/emmahobday">https://github.com/emmahobday</a></li>
         </ul>
