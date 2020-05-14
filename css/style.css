@@ -286,3 +286,9 @@ li {
 .contact-link:hover {
   color: #d81e5b;
 }
+
+.about-title {
+  margin: 0px !important;
+  padding: 0px !important;
+  text-align: center;
+}
