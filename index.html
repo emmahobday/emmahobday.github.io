@@ -5,22 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css">
   <link rel="stylesheet" href="/css/style.css">
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat|Roboto+Mono&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Spartan|Bungee+Shade|Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <!-- DevIcon and FontAwesome-->
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <script src="https://kit.fontawesome.com/c6e5b86403.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <!-- // Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
   <title>Emma Hobday</title>
 </head>
 
 <body>
   <section class="hero is-fullheight has-bg-img">
     <div class="hero-head">
-      <header class="navbar">
+
+      <!-- OLD NAVBAR -->
+      <!-- <header class="navbar">
         <div class="container">
           <div id="navbarMenuHeroC" class="navbar-menu">
             <div class="navbar-end">
@@ -31,7 +42,33 @@
             </div>
           </div>
         </div>
-      </header>
+      </header> -->
+
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item"></a>
+          <!-- <a role="button" class="navbar-burger burger" id="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="toggleOpen()"> -->
+          <a role="button" class="navbar-burger burger" id="navbar-burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div class="navbar-menu" id="navbar-menu">
+          <div class="navbar-start"></div>
+          <div class="navbar-end"></div>
+          <!-- <a class="navbar-item" href="#about" onclick="toggleOpen()">About</a> -->
+          <a class="navbar-item" href="#about">About</a>
+          <!-- <a class="navbar-item" href="#experience">Education</a> -->
+          <a class="navbar-item" href="#experience">Experience</a>
+          <a class="navbar-item" href="#projects">Projects</a>
+          <a class="navbar-item" href="#contact">Contact</a>
+        </div>
+      </nav>
+
     </div>
 
     <div class="hero-body">
@@ -44,337 +81,449 @@
 
   <main>
 
-    <div class="columns pageheight aboutContainer">
-      <div class="column is-two-thirds">
-        <section class="section">
-          <div class="container">
-            <h1 class="title secheading" id="about">About Me</h1>
+    <section class="section sectionA">
+      <div class="columns pageheight aboutContainer">
+        <div class="column is-half-desktop is-two-thirds-widescreen">
+          <section class="section">
+            <div class="container">
+              <h1 class="title secheading" id="about">ABOUT ME</h1>
+              <img src="/images/emma-mob-small.jpg" alt="Photo of me" class="photo-mob" />
+              <p class="about-p">I’ve been teaching at one of the largest primary schools in the country for the last
+                seven years, and one
+                of the key teaching points in my classroom was always <span class="pink">growth mindset</span> - the
+                theory that you can cultivate
+                your ability through hard work. </p>
+              <p class="about-p">I loved motivating and guiding children to achieve more than they thought
+                they were capable of, and when I started to crave a new professional challenge, I decided to take the
+                same
+                attitude towards myself.</p>
 
-            <p>I’ve been teaching at one of the largest primary schools in the country for the last seven years, and one
-              of the key teaching points in my classroom was always ‘growth mindset’ - the theory that you can cultivate
-              your ability through hard work. I loved motivating and guiding children to achieve more than they thought
-              they were capable of, and when I started to crave a new professional challenge, I decided to take the same
-              attitude towards myself.</p>
-            <p>Through the GA Software Engineering Immersive course, I've developed a solid foundation of full-stack
-              development skills. Scroll down to take a look at some of my projects and get in touch.</p>
-          </div>
-        </section>
-      </div>
-      <div class="column is-one-third">
-        <section class="section">
-          <div class="container">
-            <img src="/images/Emma-1968-73.jpg" alt="Photo of me" class="photo" />
-            <!-- <img src="/images/Emma-updated.jpg" alt="Photo of me" class="photo" /> -->
+              <p class="about-p">Through the GA Software Engineering Immersive course, I've developed a solid foundation
+                of full-stack
+                development skills. <a class="inline-anchor" href="#projects">Take a look</a> at some of my projects and
+                <a class="inline-anchor" href="#contact">get in touch</a>.</p>
+            </div>
+          </section>
+        </div>
+        <div class="column is-half-desktop is-one-third-widescreen hide-mob">
+          <section class="section">
+            <div class="imgContainer container">
+              <img src="/images/Emma-1968-73.jpg" alt="Photo of me" class="photo-large hide-pic" />
+              <!-- <img src="/images/Emma-updated.jpg" alt="Photo of me" class="photo" /> -->
 
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <section class="section">
-      <div class="container">
-        <h1 class="title secheading">Skills</h1>
-        <p>These are some of the skills and tech I'm most confident with - take a look at my <a class="inline-anchor"
-            href="#projects">projects</a> to see these skills in action. I'm continuing to develop these skills through
-          ongoing projects, so take a look at my <a class="inline-anchor" target='_blank'
-            href="http://www.github.com/emmahobday">GitHub</a> to see my latest work.</p>
-        <div class=icons>
-          <div class="icon-div"><i class="devicon-html5-plain-wordmark icon"></i>
-            <p class="icon-label">HTML5</p>
-          </div>
-          <div class="icon-div"><i class="devicon-css3-plain icon"></i>
-            <p class="icon-label">CSS3</p>
-          </div>
-          <div class="icon-div"><i class="devicon-javascript-plain icon"></i>
-            <p class="icon-label">JavaScript</p>
-          </div>
-          <div class="icon-div"><i class="devicon-github-plain icon"></i>
-            <p class="icon-label">GitHub</p>
-          </div>
-          <div class="icon-div"><i class="devicon-babel-plain icon"></i>
-            <p class="icon-label">Babel</p>
-          </div>
-          <div class="icon-div"><i class="devicon-chrome-plain icon"></i>
-            <p class="icon-label">Chrome</p>
-          </div>
-          <div class="icon-div"><i class="devicon-django-plain icon"></i>
-            <p class="icon-label">Django</p>
-          </div>
-          <div class="icon-div"><i class="devicon-express-original icon"></i>
-            <p class="icon-label">Express.js</p>
-          </div>
-          <div class="icon-div"><i class="devicon-git-plain icon"></i>
-            <p class="icon-label">Git</p>
-          </div>
-          <div class="icon-div"><i class="devicon-heroku-original icon"></i>
-            <p class="icon-label">Heroku</p>
-          </div>
-          <div class="icon-div"><i class="devicon-mongodb-plain icon"></i>
-            <p class="icon-label">MongoDB</p>
-          </div>
-          <div class="icon-div"><i class="devicon-mocha-plain icon"></i>
-            <p class="icon-label">Mocha</p>
-          </div>
-          <div class="icon-div"><i class="devicon-mysql-plain icon"></i>
-            <p class="icon-label">SQL</p>
-          </div>
-          <div class="icon-div"><i class="devicon-nodejs-plain icon"></i>
-            <p class="icon-label">Node.js</p>
-          </div>
-          <div class="icon-div"><i class="devicon-postgresql-plain icon"></i>
-            <p class="icon-label">PostgreSQL</p>
-          </div>
-          <div class="icon-div"><i class="devicon-python-plain icon"></i>
-            <p class="icon-label">Python</p>
-          </div>
-
-          <div class="icon-div"><i class="devicon-react-original icon"></i>
-            <p class="icon-label">React.js</p>
-          </div>
-          <div class="icon-div"><i class="devicon-sass-original icon"></i>
-            <p class="icon-label">SASS</p>
-          </div>
-          <div class="icon-div"><i class="devicon-trello-plain icon"></i>
-            <p class="icon-label">Trello</p>
-          </div>
-          <div class="icon-div"><i class="devicon-webpack-plain icon"></i>
-            <p class="icon-label">Webpack</p>
-          </div>
-          <div class="icon-div"><i class="devicon-visualstudio-plain icon"></i>
-            <p class="icon-label">VSCode</p>
-          </div>
-
-          <!-- <i className="fab fa-npm software-icon"></i>
-          <i className="fab fa-yarn software-icon"></i> -->
-
-          <!-- <i class="devicon-html5-plain-wordmark icon"></i> -->
-          <!-- <i class="devicon-css3-plain icon"></i> -->
-          <!-- <i class="devicon-javascript-plain icon"></i> -->
-          <!-- <i class="devicon-github-plain icon"></i> -->
-          <!-- <i class="devicon-babel-plain icon"></i> -->
-          <!-- <i class="devicon-chrome-plain icon"></i> -->
-          <!-- <i class="devicon-django-plain icon"></i> -->
-          <!-- <i class="devicon-express-original icon"></i> -->
-          <!-- <i class="devicon-git-plain icon"></i> -->
-          <!-- <i class="devicon-heroku-original icon"></i> -->
-          <!-- <i class="devicon-mongodb-plain icon"></i> -->
-          <!-- <i class="devicon-mocha-plain icon"></i> -->
-          <!-- <i class="devicon-mysql-plain icon"></i> -->
-          <!-- <i class="devicon-nodejs-plain icon"></i> -->
-          <!-- <i class="devicon-postgresql-plain icon"></i> -->
-          <!-- <i class="devicon-python-plain icon"></i> -->
-          <!-- <i class="devicon-react-original icon"></i> -->
-          <!-- <i class="devicon-sass-original icon"></i> -->
-          <!-- <i class="devicon-trello-plain icon"></i> -->
-          <!-- <i class="devicon-webpack-plain icon"></i> -->
-
+            </div>
+          </section>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h1 class="title secheading" id="experience">Experience</h1>
-        <div class="columns">
-          <div class="column">
+    <section class="section section B">
+      <div class="columns skillsContainer">
+        <div class="column">
+          <h1 class="title secheading">SKILLS</h1>
+          <p>Using JavaScript to building beautiful, efficient applications is my passion.</p>
+          <!-- <h3 class="icon-sub">Key Skills:</h3> -->
+          <div class=icons>
+            <div class="icon-div icon-larger"><i class="devicon-javascript-plain icon"></i>
+              <p class="icon-label-large">JavaScript</p>
+            </div>
+            <div class="icon-div icon-larger"><i class="devicon-react-original icon"></i>
+              <p class="icon-label-large">React.js</p>
+            </div>
+            <div class="icon-div icon-larger"><i class="devicon-nodejs-plain icon"></i>
+              <p class="icon-label-large">Node.js</p>
+            </div>
+            <div class="icon-div icon-larger"><i class="devicon-html5-plain-wordmark icon"></i>
+              <p class="icon-label-large">HTML5</p>
+            </div>
+            <div class="icon-div icon-larger"><i class="devicon-css3-plain icon"></i>
+              <p class="icon-label-large">CSS3</p>
+            </div>
+            <div class="icon-div icon-larger"><i class="devicon-express-original icon"></i>
+              <p class="icon-label-large">Express.js</p>
+            </div>
+          </div>
+
+          <p>I'm experienced in using a range of front-end and back-end technologies, languages and frameworks - take a
+            look at my <a class="inline-anchor" href="#projects">projects</a> to see these skills in action. </p>
+
+          <!-- <h3 class="icon-sub">Also experienced with:</h3> -->
+          <div class=icons>
+            <div class="icon-div"><i class="devicon-github-plain icon"></i>
+              <p class="icon-label">GitHub</p>
+            </div>
+            <div class="icon-div"><i class="devicon-babel-plain icon"></i>
+              <p class="icon-label">Babel</p>
+            </div>
+            <div class="icon-div"><i class="devicon-chrome-plain icon"></i>
+              <p class="icon-label">Chrome</p>
+            </div>
+            <div class="icon-div"><i class="devicon-django-plain icon"></i>
+              <p class="icon-label">Django</p>
+            </div>
+            <div class="icon-div"><i class="devicon-git-plain icon"></i>
+              <p class="icon-label">Git</p>
+            </div>
+            <div class="icon-div"><i class="devicon-heroku-original icon"></i>
+              <p class="icon-label">Heroku</p>
+            </div>
+            <div class="icon-div"><i class="devicon-mongodb-plain icon"></i>
+              <p class="icon-label">MongoDB</p>
+            </div>
+            <div class="icon-div"><i class="devicon-mocha-plain icon"></i>
+              <p class="icon-label">Mocha</p>
+            </div>
+            <!-- </div>
+        <div class="icons"> -->
+            <div class="icon-div"><i class="devicon-mysql-plain icon"></i>
+              <p class="icon-label">SQL</p>
+            </div>
+            <div class="icon-div"><i class="devicon-postgresql-plain icon"></i>
+              <p class="icon-label">PostgreSQL</p>
+            </div>
+            <div class="icon-div"><i class="devicon-python-plain icon"></i>
+              <p class="icon-label">Python</p>
+            </div>
+            <div class="icon-div"><i class="devicon-sass-original icon"></i>
+              <p class="icon-label">SASS</p>
+            </div>
+            <div class="icon-div"><i class="devicon-trello-plain icon"></i>
+              <p class="icon-label">Trello</p>
+            </div>
+            <div class="icon-div"><i class="devicon-webpack-plain icon"></i>
+              <p class="icon-label">Webpack</p>
+            </div>
+            <div class="icon-div"><i class="devicon-visualstudio-plain icon"></i>
+              <p class="icon-label">VSCode</p>
+            </div>
+          </div>
+          <p>I'm continuing to develop these skills through
+            ongoing projects, so take a look at my <a class="inline-anchor" target='_blank'
+              href="http://www.github.com/emmahobday">GitHub</a> to see my latest work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sectionA">
+      <div class="columns skillsContainer">
+        <!-- <h1 class="title secheading" id="experience">Experience</h1> -->
+        <!-- <div class="columns"> -->
+
+        <!-- <div class="column">
             <div class="experience">
-              <img src="/images/ga-round.png" alt="GA Logo">
-              <p class="courseheading">Software Engineering Immersive Course</p>
+              <img src="/images/ga-round.png" alt="GA Logo" class="logo">
+              <p class="courseheading">Instructional Associate</p>
+              <p class="coursedate">August 2020 - present</p>
+              <p class="about-p">Working with a lead instructor to deliver focused, interactive workshops, including: Programmers for Non-Programmers; JavaScript Fundamentals.
+                Developing lesson resources that check for understanding and support students on a rigorous learning journey.
+                Facilitating a safe, supportive and energetic community that inspires and supports a diverse group of students.</p>
+            </div>
+          </div> -->
+
+        <!-- <div class="column">
+            <div class="experience">
+              <img src="/images/ga-round.png" alt="GA Logo" class="logo">
+              <p class="courseheading">Software Engineering Immersive Student</p>
               <p class="coursedate">February 2020 - April 2020</p>
-              <p class="justify">12 week full time Software Engineering immersive course, covering programming
+              <p class="about-p">12 week full time Software Engineering immersive course, covering programming
                 fundamentals, front-end development (HTML5, CSS, JavaScript), back-end development (Django, MongoDB,
                 PostgreSQL), working in teams and
                 joint projects, including daily stand-ups.</p>
             </div>
-          </div>
-          <div class="column">
+          </div> -->
+
+        <!-- <div class="column">
             <div class="experience">
               <img src="/images/sandringham.png" alt="SPS Logo">
               <p class="courseheading">Year Group Leader and Class Teacher</p>
               <p class="coursedate">September 2012 - July 2019</p>
-              <p class="justify">Class teacher with middle management responsibilities, including Year 6 Year Group
+              <p class="about-p">Class teacher with middle management responsibilities, including Year 6 Year Group
                 Leader, Head of Science, and Computing Lead. You can see a more detailed career breakdown on my <a
                   class="inline-anchor" target='_blank' href="http://www.linkedin.com/in/emmahobday1">LinkedIn</a>.</p>
             </div>
-          </div>
-          <div class="column">
+          </div> -->
 
-            <div class="experience">
-              <h1 class="education">Education</h1>
-              <div class="eduitem">
-                <p class="courseheading">PGCE Primary Education</p>
-                <p class="coursedate">2011-2012</p>
-                <p class="courseinstitution">Institute of Education, University of London</p>
+        <!-- <div class="column"> -->
+
+        <div class="experience" id="education">
+          <h1 class="title secheading">EDUCATION</h1>
+          <div class="eduitem">
+            <p class="courseheading">Software Engineering Immersive</p>
+            <p class="coursedate">February - April 2020</p>
+            <p class="courseinstitution">General Assembly, London</p>
+          </div>
+          <div class="eduitem">
+            <p class="courseheading">PGCE Primary Education</p>
+            <p class="coursedate">2011-2012</p>
+            <p class="courseinstitution">Institute of Education, University of London</p>
+          </div>
+          <div class="eduitem">
+            <p class="courseheading">BA Philosophy (Hons)</p>
+            <p class="coursedate">2004-2007</p>
+            <p class="courseinstitution">University of Warwick</p>
+            <!-- <p class="about-p">This course provided me with fine-tuned skills in clear and analytical thinking, logical
+              reasoning and attention to detail. I also spent my second year studying at Queen’s University in Ontario,
+              Canada, which allowed me to pursue a personal interest in the philosophy of mathematics.</p> -->
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section sectionB" >
+      <h1 class="title secheading" id="experience">EXPERIENCE</h1>
+      <div class="container card-container">
+
+        <div class="card">
+          <div class="card-image">
+            <img src="/images/ga-round.png" alt="GA Logo" class="logo">
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="courseheading">Instructional Associate</p>
+                <p class="coursedate">August 2020 - present</p>
               </div>
-              <div class="eduitem">
-                <p class="courseheading">BA Philosophy (Hons)</p>
-                <p class="coursedate">2004-2007</p>
-                <p class="courseinstitution">University of Warwick</p>
+            </div>
+
+            <div class="content">
+              <p class="about-p">Working with a lead instructor to deliver focused, interactive workshops, including:
+              </p>
+              <ul>
+                <li>
+                  <p class="about-p">Programming for Non-Programmers</p>
+                </li>
+                <li>
+                  <p class="about-p">JavaScript Fundamentals</p>
+                </li>
+              </ul>
+              <p class="about-p"> Developing lesson resources that check for understanding and support students on a
+                rigorous learning journey.
+                Facilitating a safe, supportive and energetic community that inspires and supports a diverse group of
+                students.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <div class="card-image">
+            <img src="/images/ga-round.png" alt="GA Logo" class="logo">
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="courseheading">Software Engineering Immersive Student</p>
+                <p class="coursedate">February 2020 - April 2020</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-
-    <section class="section">
-      <div class="container">
-        <h1 class="title secheading" id="projects">Projects</h1>
-        <p>All code and ReadMes can be found on <a class="inline-anchor" target='_blank'
-            href="http://www.github.com/emmahobday">Github</a>.</p>
-        <div class="project-container">
-          <div class="individual-project">
-            <h3 class="small-heading">Project 1: <a href="http://emmahobday.github.io/project-1"
-                rel='noopener noreferrer' target='_blank' class="project-name">Jurassic Pac-Man</a></h3>
-            <img src="/images/screenshots/1.png" alt="Project 1" class="project-image">
-            <p class="project-text">A week-long solo project to create a grid-based game to be rendered in the browser,
-              using 'vanilla' JavaScript, HTML and CSS. </p>
-            <p class="project-text">I created a Jurassic Park themed version of the arcade classic Pac-Man that allows
-              the user to control a Jeff Goldblum avatar, losing lives when caught by pursuing dinosaurs who move
-              intelligently around the maze, and achieving a final score if they win.</p>
-            <p class="project-text">Main tech used: <i class="devicon-html5-plain-wordmark mini-icon"></i>
-              <i class="devicon-css3-plain mini-icon"></i>
-              <i class="devicon-javascript-plain mini-icon"></i>
-              <i class="devicon-github-plain mini-icon"></i></p>
-          </div>
-          <div class="individual-project">
-            <h3 class="small-heading">Project 2: <a href="http://emmahobday.github.io/project-2"
-                rel='noopener noreferrer' target='_blank' class="project-name">Weather API</a></h3>
-            <img src="/images/screenshots/2.png" alt="Project 2" class="project-image">
-            <p class="project-text">A two-day hackathon paired project to create a React app that consumes a public API
-              and has several components, both functional and classical. We chose to create a weather app which gives
-              detailed forecasting information for major cities around the world.</p>
-            <p class="project-text">We used DarkSky API as our data source, and used Bulma as a framework for our
-              styling.
-              We used moment.js to create a clock that ticks in local time on each city page.</p>
-            <p class="project-text">Main tech used:
-              <i class="devicon-html5-plain-wordmark mini-icon"></i>
-              <i class="devicon-css3-plain mini-icon"></i>
-              <i class="devicon-javascript-plain mini-icon"></i>
-              <i class="devicon-react-original mini-icon"></i>
-              <i class="devicon-github-plain mini-icon"></i>
-            </p>
-          </div>
-        </div>
-        <div class="project-container">
-          <div class="individual-project">
-            <h3 class="small-heading">Project 3: <a href="http://food-for-thought-project-3.herokuapp.com"
-                rel='noopener noreferrer' target='_blank' class="project-name">Food For Thought</a></h3>
-            <img src="/images/screenshots/3.png" alt="Project 3" class="project-image">
-            <p class="project-text">A week-long project, working in a team of 4, to build a full-stack application. Food
-              For Thought helps users to find great restaurants. Not only can you search and filter restaurants, but
-              logged-in users can add new restaurants to the database, mark favourite restaurants, and leave comments on
-              a restaurant's page. Users can also change their password.</p>
-            <p class="project-text">We used Express to create our API and serve our data from a Mongo database; this API
-              was consumed with a
-              React front-end. We used Git and Github to work collaboratively, developing features on our own branches
-              before merging to a master branch. </p>
-            <p class="project-text">I built both front-end features, including the search and filter functions
-              for finding a restaurant that work in tandem, and back-end features, including a ‘change password’
-              function. </p>
-            <p class="project-text">Main tech used:
-              <i class="devicon-html5-plain-wordmark mini-icon"></i>
-              <i class="devicon-css3-plain mini-icon"></i>
-              <i class="devicon-javascript-plain mini-icon"></i>
-              <i class="devicon-react-original mini-icon"></i>
-              <i class="devicon-github-plain mini-icon"></i>
-              <i class="devicon-git-plain mini-icon"></i>
-              <i class="devicon-express-original mini-icon"></i>
-              <i class="devicon-mongodb-plain mini-icon"></i>
-              <i class="devicon-heroku-original mini-icon"></i>
-            </p>
-          </div>
-          <div class="individual-project">
-            <h3 class="small-heading">Project 4: <a href="http://recipedia84.herokuapp.com" rel='noopener noreferrer'
-                target='_blank' class="project-name">Recipedia</a></h3>
-            <img src="/images/screenshots/4.png" alt="Project 4" class="project-image">
-            <p class="project-text">A week-long paired project to build a full-stack application by making our own
-              back-end and front-end. Our app, Recipedia, contains a database of recipies which users can search using
-              advanced search and filter functions. Logged-in users can rate recipes out of five, and this data is used
-              to recommend recipes for each user. Ingredients can be added to a shopping list individually, and recipies
-              added to a meal plan calendar.</p>
-            <p class="project-text">We created a PostgreSQL database with selected data taken from Edamam public API,
-              served this data using Django REST Framework, and we built our front-end using React. </p>
-            <p class="project-text">I found it
-              particularly satisfying designing backend models in Django to serve data in the most useful way. I built
-              both back-end and front-end advanced search features, writing Django filter queries using Python on the
-              back-end, and developed my skills with React hooks on the front-end.</p>
-            <p class="project-text">Main tech used:
-              <i class="devicon-html5-plain-wordmark mini-icon"></i>
-              <i class="devicon-css3-plain mini-icon"></i>
-              <i class="devicon-javascript-plain mini-icon"></i>
-              <i class="devicon-react-original mini-icon"></i>
-              <i class="devicon-github-plain mini-icon"></i>
-              <i class="devicon-git-plain mini-icon"></i>
-              <i class="devicon-postgresql-plain mini-icon"></i>
-              <i class="devicon-python-plain mini-icon"></i>
-              <i class="devicon-django-plain mini-icon"></i>
-              <i class="devicon-heroku-original mini-icon"></i>
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section">
-      <h1 class="title secheading about-title" id="about">More about me</h1>
-      <div class="columns pageheight aboutContainer">
-        <div class="column is-one-third">
-          <section class="section">
-            <div class="container">
-              <p>I'm a really keen knitter, and love making patterned blankets and chunky accessories. Take a look at my
-                <a class="inline-anchor" target='_blank' href="https://www.instagram.com/emma.knits/">knitting insta</a>
-                if you're interested!</p>
-              <img class="about-img" src="/images/knitting.png" alt="Knitting">
+            <div class="content">
+              <p class="about-p">12 week full time Software Engineering immersive course, working in teams and joint
+                projects, including daily stand-ups, covering:
+              <ul>
+                <li>programming fundamentals</li>
+                <li>front-end development (HTML5, CSS, JavaScript)</li>
+                <li>back-end development (Django, MongoDB, PostgreSQL).</li>
+              </ul>
+              <p class="about-p">Take a look at my projects <a class="pink" href="#projects">here</a></p>
+              </p>
             </div>
-          </section>
+          </div>
         </div>
-        <div class="column is-one-third">
-          <section class="section">
-            <div class="container about-me">
-              <img class="about-img" src="/images/boardgame.png" alt="Board game" class="photo" />
-              <p>I love playing board games, especially Eurogames - some of my favourites are Ticket to Ride, Catan, A
-                Feast for Odin and Viticulture.</p>
+
+        <!-- <div class="column">
+          <div class="experience">
+            <img src="/images/sandringham.png" alt="SPS Logo">
+            <p class="courseheading">Year Group Leader and Class Teacher</p>
+            <p class="coursedate">September 2012 - July 2019</p>
+            <p class="about-p">Class teacher with middle management responsibilities, including Year 6 Year Group
+              Leader, Head of Science, and Computing Lead. You can see a more detailed career breakdown on my <a
+                class="inline-anchor" target='_blank' href="http://www.linkedin.com/in/emmahobday1">LinkedIn</a>.</p>
+          </div>
+        </div> -->
+
+        <div class="card">
+          <div class="card-image">
+            <img src="/images/sandringham.png" alt="SPS Logo" class="logo">
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="courseheading">Year Group Leader and Class Teacher</p>
+                <p class="coursedate">September 2012 - July 2019</p>
+              </div>
             </div>
-          </section>
-        </div>
-        <div class="column is-one-third">
-          <section class="section">
-            <div class="container">
-              <p>Like most people, I'm also a big fan of travelling. Particular highlights over the years have been
-                swimming with humpback whales in Tonga, skiing in New Zealand, and watching the sun rise at World’s End
-                in Sri Lanka</p>
-              <img class="about-img" src="/images/bag.png" alt="Board game" class="photo" />
+
+            <div class="content">
+              <p class="about-p">Class teacher with middle management responsibilities, including:
+              <ul>
+                <li>Year 6 Year Group Leader</li>
+                <li>Head of Science</li>
+                <li>Computing Lead.</li>
+              </ul>
+              You can see a more detailed career breakdown on my <a class="inline-anchor" target='_blank'
+                href="http://www.linkedin.com/in/emmahobday1">LinkedIn</a>.</p>
             </div>
-          </section>
+          </div>
         </div>
+
       </div>
     </section>
 
+    <section class="section sectionA">
+      <h1 class="title secheading" id="projects">PROJECTS</h1>
+      <div class="carouselContainer">
+        <div class="fade">
 
-    <section class="section">
-      <div class="container">
-        <h1 class="title secheading" id="contact">Contact me</h1>
-        <ul>
-          <li><i class="far fa-envelope"></i> <a class="contact-link"
-              href="mailto:emma.hobday@gmail.com">emma.hobday@gmail.com</a></li>
-          <li><i class="fab fa-linkedin"></i> <a class="contact-link" target='_blank' 
-              href="https://www.linkedin.com/in/emmahobday1">www.linkedin.com/in/emmahobday1</a></li>
-          <li><i class="fab fa-github-square"></i> <a class="contact-link" target='_blank' 
-              href="https://github.com/emmahobday">https://github.com/emmahobday</a></li>
-        </ul>
+          <div class="carouselItem project">
+            <div class="project-container">
+              <h3 class="small-heading project-heading"><a href="http://recipedia84.herokuapp.com"
+                  rel='noopener noreferrer' target='_blank' class="project-name">Recipedia</a></h3>
+              <p class="project-text-mob yellow">A week-long paired project to build a full-stack application.</p>
+              <a href="http://recipedia84.herokuapp.com" rel='noopener noreferrer' target='_blank' class="project-name">
+                <img src="/images/screenshots/4.png" alt="Project 4" class="project-image">
+              </a>
+              <p class="project-text-mob">Find and rate recipies, and receive personalised recipe suggestions for you.
+                Add ingredients to your shopping list, and plan your meals on a calendar. </p>
+              <p class="project-text-mob">We built a PostgreSQL database with selected data taken from Edamam API,served
+                this data using Django REST Framework, and built our front-end using React. </p>
+              <p class="project-text pink centered">Main tech used:
+              <p class="project-text yellow centered">
+                <i class="devicon-html5-plain-wordmark mini-icon"></i>
+                <i class="devicon-css3-plain mini-icon"></i>
+                <i class="devicon-javascript-plain mini-icon"></i>
+                <i class="devicon-react-original mini-icon"></i>
+                <i class="devicon-github-plain mini-icon"></i>
+                <i class="devicon-git-plain mini-icon"></i>
+                <i class="devicon-postgresql-plain mini-icon"></i>
+                <i class="devicon-python-plain mini-icon"></i>
+                <i class="devicon-django-plain mini-icon"></i>
+                <i class="devicon-heroku-original mini-icon"></i>
+              </p>
+              </p>
+            </div>
+          </div>
+
+          <div class="carouselItem project">
+            <div class="project-container">
+              <h3 class="small-heading project-heading"><a href="http://food-for-thought-project-3.herokuapp.com"
+                  rel='noopener noreferrer' target='_blank' class="project-name">Food For Thought</a></h3>
+              <p class="project-text-mob yellow">A week-long team project to build a full-stack application.</p>
+              <img src="/images/screenshots/3.png" alt="Project 3" class="project-image">
+              <p class="project-text-web">A week-long project, working in a team of 4, to build a full-stack
+                application. Food
+                For Thought helps users to find great restaurants. Not only can you search and filter restaurants, but
+                logged-in users can add new restaurants to the database, mark favourite restaurants, and leave comments
+                on
+                a restaurant's page. Users can also change their password.</p>
+              <p class="project-text-web">We used Express to create our API and serve our data from a Mongo database;
+                this API
+                was consumed with a
+                React front-end. We used Git and Github to work collaboratively, developing features on our own branches
+                before merging to a master branch. </p>
+              <p class="project-text-web">I built both front-end features, including the search and filter functions
+                for finding a restaurant that work in tandem, and back-end features, including a ‘change password’
+                function. </p>
+              <p class="project-text-mob">
+                Find a great London restaurant with search and filter functions. Create an account to add new
+                restaurants to the database, star your favourites and leave comments.
+              </p>
+              <p class="project-text-mob">We used Express to create our API and serve our data from a Mongo database,
+                which is consumed by a React front-end.</p>
+              <p class="project-text pink centered">Main tech used:
+              <p class="project-text yellow centered">
+
+                <i class="devicon-html5-plain-wordmark mini-icon"></i>
+                <i class="devicon-css3-plain mini-icon"></i>
+                <i class="devicon-javascript-plain mini-icon"></i>
+                <i class="devicon-react-original mini-icon"></i>
+                <i class="devicon-github-plain mini-icon"></i>
+                <i class="devicon-git-plain mini-icon"></i>
+                <i class="devicon-express-original mini-icon"></i>
+                <i class="devicon-mongodb-plain mini-icon"></i>
+                <i class="devicon-heroku-original mini-icon"></i>
+              </p>
+              </p>
+            </div>
+          </div>
+
+          <div class="carouselItem project">
+            <div class="project-container">
+              <h3 class="small-heading project-heading"><a href="http://emmahobday.github.io/project-2"
+                  rel='noopener noreferrer' target='_blank' class="project-name">Weather API</a></h3>
+              <p class="project-text-mob yellow">A two-day hackathon paired project to create a React app that consumes
+                a public API.</p>
+              <a href="http://emmahobday.github.io/project-2" rel='noopener noreferrer' target='_blank'
+                class="project-name">
+                <img src="/images/screenshots/2.png" alt="Project 2" class="project-image">
+              </a>
+              <p class="project-text-mob">Get detailed forecasting information for major cities around the world, using
+                DarkSky API as a data source. We used Bulma as a framework for our
+                styling, and moment.js to create a clock that ticks in local time on each city page.</p>
+
+              <p class="project-text pink centered">Main tech used:
+              <p class="project-text yellow centered">
+                <i class="devicon-html5-plain-wordmark mini-icon"></i>
+                <i class="devicon-css3-plain mini-icon"></i>
+                <i class="devicon-javascript-plain mini-icon"></i>
+                <i class="devicon-react-original mini-icon"></i>
+                <i class="devicon-github-plain mini-icon"></i>
+              </p>
+              </p>
+            </div>
+          </div>
+
+          <div class="carouselItem project">
+            <div class="project-container">
+              <h3 class="small-heading project-heading"><a href="http://emmahobday.github.io/project-1"
+                  rel='noopener noreferrer' target='_blank' class="project-name">Jurassic Parc-Man</a></h3>
+              <p class="project-text-mob yellow">A week-long solo project to create a grid-based game using 'vanilla'
+                JavaScript, HTML and CSS. </p>
+              <a href="http://emmahobday.github.io/project-1" rel='noopener noreferrer' target='_blank'
+                class="project-name">
+                <img src="/images/screenshots/1.png" alt="Project 1" class="project-image">
+              </a>
+              <p class="project-text-mob">I created a Jurassic Park themed version of Pac-Man that allows
+                the user to control a Jeff Goldblum avatar, losing lives when caught by pursuing dinosaurs who move
+                intelligently around the maze, and achieving a final score if they win.</p>
+              <p class="project-text pink centered">Main tech used:
+              <p class="project-text yellow centered">
+                <i class="devicon-html5-plain-wordmark mini-icon"></i>
+                <i class="devicon-css3-plain mini-icon"></i>
+                <i class="devicon-javascript-plain mini-icon"></i>
+                <i class="devicon-github-plain mini-icon"></i>
+              </p>
+              </p>
+            </div>
+          </div>
+          
+
+        </div>
+
       </div>
+      </div>
+
     </section>
+
+
+
+
 
   </main>
 
   <footer>
-    <a href="https://www.freepik.com/free-photos-vectors/background" class="footerlink">Background photo created by
-      rawpixel.com - www.freepik.com</a>
+    <!-- <a href="https://www.freepik.com/free-photos-vectors/background" class="footerlink">Background photo created by
+      rawpixel.com - www.freepik.com</a> -->
   </footer>
 
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="module" src="./script.js"></script>
 </body>
 
 </html>
