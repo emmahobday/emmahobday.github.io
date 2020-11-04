@@ -38,6 +38,16 @@ function main() {
     console.log({ navItems })
     burger.addEventListener('click', toggleOpen)
     navItems.forEach(item => item.addEventListener('click', toggleOpen))
+
+    function toggleFlipped(event) {
+      const projectClicked = event.target.parentElement.parentElement.parentElement.parentElement.parentElement
+      projectClicked.classList.toggle('is-flipped')
+    }
+
+    //get the elements with the class project
+    const projects = Array.from(document.getElementsByClassName('read-more-icon'))
+    //add an event listener, when it is clicked on, add the class .is-flipped to that project div
+    projects.forEach(project => project.addEventListener('click', toggleFlipped))
   })
 
 }
